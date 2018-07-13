@@ -1,12 +1,1 @@
-<h1> Welcome to {{ title }} Development !!! </h1>
-
-<button (click)="postProfile()">Post Profile</button>
-
-<div *ngFor="let item of productImages">
-  {{item}} <br>
-  {{item.HotelName}} <br>
-  {{item.DeepLink}} <img src="{{item.DeepLink}}" alt="">   <br>
-  {{item.Description}}   <br>
-  {{item.PhoneNo}}   <br>
-  {{item.EmailNo}}   <br>
-</div>
+<router-outlet></router-outlet>

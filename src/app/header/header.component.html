@@ -1,3 +1,633 @@
-<p>
-  header works!
-</p>
+<div class="homebg">
+  <!-- Head Start -->
+  <section id="stickyNavigation" class="navigation-component">
+      <nav class="navbar">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-3 hidden-xs">
+                      <div class="navbar-header">
+                          <a class="navbar-brand" title="tripify" href="/">
+                              <img class="tripify-logo" src="/assets/logo.png" title="tripify" alt="tripify" />
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 visible-xs">
+                      <div class="row">
+                          <div class="col-xs-4">
+                              <div class="navbar- header">
+                                  <a class="navbar-brand" href="/">
+                                      <img class="tripify-logo" src="/assets/logo.png" alt="tripify" />
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-xs-8 text-right">
+                              <ul class="nav navbar-nav navbar-right header-icons">
+                                  <li>
+                                      <a href="tel:18448404667">
+                                          <i class="icon icon-call"></i>
+                                          <span class="tel-num">1-844-840-4667</span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-5 col-xs-12 text-center hidden-xs">
+                      <h3 class="nav-text">Book Unique Travel Experiences with Us.</h3>
+                  </div>
+                  <div class="col-sm-4 hidden-xs text-right">
+                      <ul class="nav navbar-nav navbar-right header-icons">
+                          <li>
+                              <a href="tel:18448404667">
+                                  <i class="icon icon-call"></i>
+                                  <span class="tel-num">1-844-840-4667
+                                      <small>(TOLL FREE)</small>
+                                  </span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </section>
+  <!-- Head Closed  > os-animation data-os-animation="fadeInUp" data-os-animation-delay="0s"-->
+  <section class="search-component">
+      <div class="container">
+          <div class="row">
+              <ul class="search-tab list-inline text-center">
+                  <li class="active" id="flightEngineTab">
+                      <a class="iconTab icon-flight"></a>
+                  </li>
+                  <li id="hotelEngineTab">
+                      <a class="iconTab icon-hotel"></a>
+                  </li>
+              </ul>
+              <div class="tab-content engine-component">
+                  <form id="flightsSearch" class="engine-component-flight tab-pane active" action="/" method="post">
+                      <div class="search-block">
+                          <div class="search-row">
+                              <span class="iconFl icon-from"></span>
+                              <div class="input-bg row">
+                                  <div id="error"></div>
+                                  <div class="col-sm-8">
+                                      <div class="depart">
+                                          <span class="depart-temp">
+                                              <i class="icon-Weather_Sunny"></i> 10 <sup> &#8451; </sup>
+                                          </span>
+                                          <label for="froCity" class="input-icon icon-location"></label>
+                                          <input id="froCity" name="froCity" tabindex="1" placeholder="Origin City" class="text-uppercase" onfocus="this.select();"
+                                              type="text" value="" autocomplete="off" />
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4 pipe round-trip">
+                                      <div tabindex="2" class="customize-select-box dropdown customizeSelectTab">
+                                          <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                              <span id="tripTypeSelected">ROUND TRIP</span>
+                                              <span class="tripIcon pull-right"></span>
+                                          </div>
+                                          <ul class="dropdown-menu" role="menu" id="tripTypeDrop">
+                                              <li class="bottom-border">
+                                                  <hr/>
+                                              </li>
+                                              <li value="2">
+                                                  <i class="triptype icon-Round-trip"></i>ROUND TRIP</li>
+                                              <li value="1">
+                                                  <i class="triptype icon-One_way"></i>ONEWAY</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="search-row">
+                              <div class="row">
+                                  <input id="toCity" name="toCity" tabindex="3" placeholder="where to?" class="tocity" data-val="flight"
+                                      onfocus="this.select();" type="text" value="" />
+                                  <span class="iconFl icon-to"></span>
+                              </div>
+                          </div>
+                          <div class="search-row">
+                              <div class="input-bg row">
+                                  <div class="col-sm-3" id="departDateDiv">
+                                      <div class="date_col">
+                                          <label for="departureDate" class="input-icon icon-calender"></label>
+                                          <input id="departureDate" tabindex="4" placeholder="DEPARTURE" class="calender" readonly="readonly"
+                                              type="text" value="" />
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-2" id="returnDateDiv">
+                                      <input id="toDate" name="toDate" tabindex="5" placeholder="RETURN" readonly="readonly" type="text" value="" />
+                                  </div>
+                                  <div class="col-sm-3 pipe">
+                                      <div tabindex="6" class="customize-select-box travelerOpen dropdown">
+                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                              <i class="icon-profile"></i>
+                                              <span id="travelerCount">1 TRAVELER</span>
+                                          </button>
+                                          <ul class="dropdown-menu" role="menu">
+                                              <li data-toggle="collapse" class="bottom-border">
+                                                  <hr/>
+                                              </li>
+                                              <li data-toggle="collapse">
+                                                  <div class="row">
+                                                      <div class="col-sm-10">
+                                                          <input id="adult" name="adult" value="1" type="text" readonly="readonly" value="" /> ADULT</div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="adultMinus">-</a>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="adultPlus">+</a>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                              <li data-toggle="collapse">
+                                                  <div class="row">
+                                                      <div class="col-sm-6">
+                                                          <input id="child" name="child" value="0" type="text" readonly="readonly" value="" />CHILD</div>
+                                                      <div class="col-sm-4 text-center">
+                                                          <small>(2-11)</small>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="childMinus">-</a>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="childPlus">+</a>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                              <li data-toggle="collapse">
+                                                  <div class="row">
+                                                      <div class="col-sm-6">
+                                                          <input id="infant" name="infant" value="0" type="text" readonly="readonly" value="" /> INFANT</div>
+                                                      <div class="col-sm-4 text-center">
+                                                          <small>(0-2)</small>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="infantMinus">-</a>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="infantPlus">+</a>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                              <li data-toggle="collapse">
+                                                  <div class="row">
+                                                      <div class="col-sm-6">
+                                                          <input id="infantWs" name="infantWs" value="0" type="text" readonly="readonly" value="" /> INFANT W/S</div>
+                                                      <div class="col-sm-4 text-center">
+                                                          <small>(with seat)</small>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="infantWsMinus">-</a>
+                                                      </div>
+                                                      <div class="col-sm-1 text-center">
+                                                          <a class="minus" id="infantWsPlus">+</a>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                              <li class="text-center">
+                                                  <button class="btn btn-default travelerClose" type="button"> Done </button>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 pipe">
+                                      <div tabindex="7" class="customize-select-box customizeSelectTab dropdown">
+                                          <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                              <span id="cabinClassSelected" class="text-uppercase">ECONOMY</span>
+                                          </div>
+                                          <ul class="dropdown-menu inputSet radio" role="menu" id="cabinClassDrop">
+                                              <li class="bottom-border"><hr/></li>
+                                              <li value="ECONOMY" class="radioBox">
+                                                  <input id="e-option" value="ECONOMY" name="selector" type="radio" checked="true">
+                                                  <label for="e-option">ECONOMY</label>
+                                                  <div class="check"></div>
+                                              </li>
+                                              <li value="BUSINESS" class="radioBox">
+                                                  <input id="b-option" value="BUSINESS" name="selector" type="radio">
+                                                  <label for="b-option">BUSINESS</label>
+                                                  <div class="check">
+                                                      <div class="inside"></div>
+                                                  </div>
+                                              </li>
+                                              <li value="FIRST" class="radioBox">
+                                                  <input id="f-option" value="FIRST" name="selector" type="radio">
+                                                  <label for="f-option">FIRST</label>
+                                                  <div class="check">
+                                                      <div class="inside"></div>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-1">
+                                      <!--<button tabindex="8" type="button"class="btn btn-default button" onclick="submitForm();" ><i class="icon-compass"></i><span class="lets-go">LET'S GO</span></button>-->
+                                      <button tabindex="8" type="button" class="btn lets-go-btn">
+                                          <i class="lets-go-btn-icon icon-compass"></i>
+                                          <span class="lets-go-btn-txt">LET'S GO</span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="search-row hidden-xs">
+                              <div class="row">
+                                  <div class="col-sm-3 search-bottom white">
+                                      <span class="cursor" tabindex="9" id="prefferedAirlineLink">PREFERRED AIRLINES</span>
+                                  </div>
+                                  <div class="col-sm-3 text-center search-bottom inputSet">
+                                      <label tabindex="10" class="white">
+                                          <input id="FlexibleSearch1" name="FlexibleSearch" type="checkbox" value="true" />
+                                          <span> - / + 2 DAYS</span>
+                                      </label>
+                                  </div>
+                                  <div class="col-sm-6 search-bottom text-right">
+                                      <div class="white">
+                                          <span class="cursor" tabindex="11" id="jawEngineLink">RETURNING FROM DIFFERENT CITY / AIRPORT</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="search-row">
+                              <div class="row input-bg">
+                                  <div class="col-sm-4">
+                                      <div tabindex="12" class="customize-select-box dropdown" id="prefferedAirline" style="display: none;">
+                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                              <span class="cursor" id="airlineSelected">PREFERRED AIRLINES</span>&nbsp;
+                                              <span class="tripIcon"></span>
+                                          </button>
+                                          <ul class="dropdown-menu scrollbar-component text-uppercase" role="menu" id="airlineDrop">
+                                              <li class="bottom-border"><hr/></li>
+                                          </ul>
+                                          <div id="prefferedAirlineLinkClose" style="display:none" class="white close-box">
+                                              <i class="icon-close"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-7 col-sm-push-1">
+                                      <div id="jawEngine" style="display: none;">
+                                          <div class="col-sm-6">
+                                              <div class="depart">
+                                                  <label for="returnFroCity" class="input-icon icon-location"></label>
+                                                  <input id="returnFroCity" name="returnFroCity" tabindex="13" placeholder="RETURNING FROM" type="text" value="" />
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                              <div class="depart">
+                                                  <label for="returnToCity" class="input-icon icon-location"></label>
+                                                  <input id="returnToCity" name="returnToCity" tabindex="14" placeholder="WHERE TO" type="text" value="" />
+                                              </div>
+                                              <div id="jawEngineLinkClose" style="display:none" class="close-box white">
+                                                  <span class="cursor">
+                                                      <i class="icon-close"></i>
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  <form id="hotelTab" class="tab-pane engine-component-hotel" action="/" method="post">
+                      <div class="search-block hotel-panel">
+                          <div class="search-row">
+                              <div class="row">
+                                  <input id="stayCity" name="stayCity" placeholder="where to?" class="tocity" data-val="hotel" onfocus="this.select();" type="text"
+                                      value="" />
+                                  <i class="iconFl icon-hotel"></i>
+                              </div>
+                          </div>
+
+                          <div class="search-row">
+                              <div class="input-bg row">
+                                  <div class="col-sm-4">
+                                      <div class="depart">
+                                          <label for="checkIn" class="input-icon icon-calender"></label>
+                                          <input id="checkIn" name="checkInDate" placeholder="Check In" class="calender text-uppercase ui-autocomplete-input" readonly="readonly"
+                                              type="text" value="" />
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4 pipe">
+                                      <div class="depart">
+                                          <label for="checkOut" class="input-icon icon-calender"></label>
+                                          <input id="checkOut" name="checkOutDate" placeholder="Check Out" class="text-uppercase ui-autocomplete-input" readonly="readonly"
+                                              type="text" value="" />
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4 pipe round-trip">
+                                      <div class="customize-select-box dropdown customizeSelectTab">
+                                          <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                              <span data-bind="label" id="roomSelectCount">ROOM 1</span>
+                                              <span class="tripIcon pull-right"></span>
+                                          </div>
+                                          <ul class="dropdown-menu" role="menu" id="roomSelectDrop">
+                                              <li class="bottom-border"><hr></li>
+                                              <li value="1"> ROOM 1</li>
+                                              <li value="2"> ROOM 2</li>
+                                              <li value="3"> ROOM 3</li>
+                                              <li value="4"> ROOM 4</li>
+                                              <li value="5"> ROOM 5</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="hotel-room-add hotel-mt">
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="row">
+                                          <div class="col-sm-4 text-right">
+                                              <div class="room-text">ROOM 1:</div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="customize-select-box dropdown customizeSelectTab">
+                                                  <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                      <span data-bind="label" id="adutSelectCount1">ADULT 1</span>
+                                                      <span class="tripIcon pull-right"></span>
+                                                  </div>
+                                                  <ul class="dropdown-menu adutSelectDrop" role="menu" data-room="1">
+                                                      <li class="bottom-border"><hr></li>
+                                                      <li value="1"> ADULT 1</li>
+                                                      <li value="2"> ADULT 2</li>
+                                                      <li value="3"> ADULT 3</li>
+                                                      <li value="4"> ADULT 4</li>
+                                                      <li value="5"> ADULT 5</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="customize-select-box dropdown customizeSelectTab">
+                                                  <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                      <span data-bind="label" id="childSelectCount1">CHILD 0</span>
+                                                      <span class="tripIcon pull-right"></span>
+                                                  </div>
+                                                  <ul class="dropdown-menu childSelectDrop" role="menu" data-room="1">
+                                                      <li class="bottom-border"><hr></li>
+                                                      <li value="0"> CHILD 0</li>
+                                                      <li value="1"> CHILD 1</li>
+                                                      <li value="2"> CHILD 2</li>
+                                                      <li value="3"> CHILD 3</li>
+                                                      <li value="4"> CHILD 4</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                      <div class="row">
+                                          <div class="col-sm-3" style="display: none;" id="rooms0-child1-div">
+                                              <div class="customize-select-box dropdown customizeSelectTab">
+                                                  <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                      <span data-bind="label" id="rooms0-children0-select">1
+                                                          <sup>yrs</sup>
+                                                      </span>
+                                                      <span class="tripIcon pull-right"></span>
+                                                  </div>
+                                                  <ul class="dropdown-menu childAgeSelect scrollbar-component" role="menu" data-val="1">
+                                                      <li class="bottom-border"><hr></li>
+                                                      <li value="1"> 1<sup>yrs</sup></li>
+                                                      <li value="2"> 2<sup>yrs</sup></li>
+                                                      <li value="3"> 3<sup>yrs</sup></li>
+                                                      <li value="4"> 4<sup>yrs</sup></li>
+                                                      <li value="5"> 5<sup>yrs</sup></li>
+                                                      <li value="6"> 6<sup>yrs</sup></li>
+                                                      <li value="7"> 7<sup>yrs</sup></li>
+                                                      <li value="8"> 8<sup>yrs</sup></li>
+                                                      <li value="9"> 9<sup>yrs</sup></li>
+                                                      <li value="10"> 10<sup>yrs</sup></li>
+                                                      <li value="11"> 11<sup>yrs</sup></li>
+                                                      <li value="12"> 12<sup>yrs</sup></li>
+                                                      <li value="13"> 13<sup>yrs</sup></li>
+                                                      <li value="14"> 14<sup>yrs</sup></li>
+                                                      <li value="15"> 15<sup>yrs</sup></li>
+                                                      <li value="16"> 16<sup>yrs</sup></li>
+                                                      <li value="17"> 17<sup>yrs</sup></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-3" style="display: none;" id="rooms0-child2-div">
+                                              <div class="customize-select-box dropdown customizeSelectTab">
+                                                  <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                      <span data-bind="label" id="rooms0-children1-select">1
+                                                          <sup>yrs</sup>
+                                                      </span>
+                                                      <span class="tripIcon pull-right"></span>
+                                                  </div>
+                                                  <ul class="dropdown-menu childAgeSelect scrollbar-component" role="menu" data-val="2">
+                                                      <li class="bottom-border"><hr></li>
+                                                      <li value="1"> 1<sup>yrs</sup></li>
+                                                      <li value="2"> 2<sup>yrs</sup></li>
+                                                      <li value="3"> 3<sup>yrs</sup></li>
+                                                      <li value="4"> 4<sup>yrs</sup></li>
+                                                      <li value="5"> 5<sup>yrs</sup></li>
+                                                      <li value="6"> 6<sup>yrs</sup></li>
+                                                      <li value="7"> 7<sup>yrs</sup></li>
+                                                      <li value="8"> 8<sup>yrs</sup></li>
+                                                      <li value="9"> 9<sup>yrs</sup></li>
+                                                      <li value="10"> 10<sup>yrs</sup></li>
+                                                      <li value="11"> 11<sup>yrs</sup></li>
+                                                      <li value="12"> 12<sup>yrs</sup></li>
+                                                      <li value="13"> 13<sup>yrs</sup></li>
+                                                      <li value="14"> 14<sup>yrs</sup></li>
+                                                      <li value="15"> 15<sup>yrs</sup></li>
+                                                      <li value="16"> 16<sup>yrs</sup></li>
+                                                      <li value="17"> 17<sup>yrs</sup></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-3" style="display: none;" id="rooms0-child3-div">
+                                              <div class="customize-select-box dropdown customizeSelectTab">
+                                                  <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                      <span data-bind="label" id="rooms0-children2-select">1
+                                                          <sup>yrs</sup>
+                                                      </span>
+                                                      <span class="tripIcon pull-right"></span>
+                                                  </div>
+                                                  <ul class="dropdown-menu childAgeSelect scrollbar-component" role="menu" data-val="3">
+                                                      <li class="bottom-border"><hr></li>
+                                                      <li value="1"> 1<sup>yrs</sup></li>
+                                                      <li value="2"> 2<sup>yrs</sup></li>
+                                                      <li value="3"> 3<sup>yrs</sup></li>
+                                                      <li value="4"> 4<sup>yrs</sup></li>
+                                                      <li value="5"> 5<sup>yrs</sup></li>
+                                                      <li value="6"> 6<sup>yrs</sup></li>
+                                                      <li value="7"> 7<sup>yrs</sup></li>
+                                                      <li value="8"> 8<sup>yrs</sup></li>
+                                                      <li value="9"> 9<sup>yrs</sup></li>
+                                                      <li value="10"> 10<sup>yrs</sup></li>
+                                                      <li value="11"> 11<sup>yrs</sup></li>
+                                                      <li value="12"> 12<sup>yrs</sup></li>
+                                                      <li value="13"> 13<sup>yrs</sup></li>
+                                                      <li value="14"> 14<sup>yrs</sup></li>
+                                                      <li value="15"> 15<sup>yrs</sup></li>
+                                                      <li value="16"> 16<sup>yrs</sup></li>
+                                                      <li value="17"> 17<sup>yrs</sup></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-3" style="display: none;" id="rooms0-child4-div">
+                                              <div class="customize-select-box dropdown customizeSelectTab">
+                                                  <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                      <span data-bind="label" id="rooms0-children3-select">1
+                                                          <sup>yrs</sup>
+                                                      </span>
+                                                      <span class="tripIcon pull-right"></span>
+                                                  </div>
+                                                  <ul class="dropdown-menu childAgeSelect scrollbar-component" role="menu" data-val="4">
+                                                      <li class="bottom-border"><hr></li>
+                                                      <li value="1"> 1<sup>yrs</sup></li>
+                                                      <li value="2"> 2<sup>yrs</sup></li>
+                                                      <li value="3"> 3<sup>yrs</sup></li>
+                                                      <li value="4"> 4<sup>yrs</sup></li>
+                                                      <li value="5"> 5<sup>yrs</sup></li>
+                                                      <li value="6"> 6<sup>yrs</sup></li>
+                                                      <li value="7"> 7<sup>yrs</sup></li>
+                                                      <li value="8"> 8<sup>yrs</sup></li>
+                                                      <li value="9"> 9<sup>yrs</sup></li>
+                                                      <li value="10"> 10<sup>yrs</sup></li>
+                                                      <li value="11"> 11<sup>yrs</sup></li>
+                                                      <li value="12"> 12<sup>yrs</sup></li>
+                                                      <li value="13"> 13<sup>yrs</sup></li>
+                                                      <li value="14"> 14<sup>yrs</sup></li>
+                                                      <li value="15"> 15<sup>yrs</sup></li>
+                                                      <li value="16"> 16<sup>yrs</sup></li>
+                                                      <li value="17"> 17<sup>yrs</sup></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div id="roomSelect2" class="hotel-room-add hotel-mt"></div>
+                          <div id="roomSelect3" class="hotel-room-add hotel-mt"></div>
+                          <div id="roomSelect4" class="hotel-room-add hotel-mt"></div>
+                          <div id="roomSelect5" class="hotel-room-add hotel-mt"></div>
+
+                          <div class="hotel-room-add hotel-mt">
+                              <div class="row" style="margin-top:20px;">
+                                  <div class="col-sm-11 sec-1">
+                                      <div class="ad-search fs16">
+                                          <span id="hotelAdvanceSearchBtn" class="cursor">
+                                              <i class="icon icon-plus"></i> ADVANCE SEARCH</span>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="row" style="display:none;" id="hotelAdvanceDiv">
+
+                                  <div class="col-sm-6">
+                                      <div class="search-hotel-name">
+                                          <label for="hotelName" class="icon icon-hotel"></label>
+                                          <input id="hotelName" name="hotelName" placeholder="Hotel Name" class="calender text-uppercase" type="text" value="" autocomplete="off" />
+                                      </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                      <div class="customize-select-box dropdown customizeSelectTab">
+                                          <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                              <i class="icon icon-starred"></i>
+                                              <span data-bind="label" id="starRatingSelect"> HOTEL RATING </span>
+                                              <span class="tripIcon pull-right"></span>
+                                          </div>
+                                          <ul class="dropdown-menu radio hotel-star-rating starSelectDrop" role="menu">
+                                              <li class="bottom-border">
+                                                  <hr>
+                                              </li>
+                                              <li value="1" class="radioBox">
+                                                  <span>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon-starred"></i>
+                                                      <i class="icon-starred"></i>
+                                                      <i class="icon-starred"></i>
+                                                      <i class="icon-starred"></i>
+                                                  </span>
+                                                  &nbsp;
+                                                  <span class="star">1 STAR</span>
+                                                  <input value="star" name="star" type="radio" checked="" />
+                                                  <div class="check"></div>
+                                              </li>
+                                              <li value="2" class="radioBox">
+                                                  <span class="star">
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon-starred"></i>
+                                                      <i class="icon-starred"></i>
+                                                      <i class="icon-starred"></i>
+                                                  </span>
+                                                  &nbsp;
+                                                  <span>2 STARS</span>
+                                                  <input value="star" name="star" type="radio" checked="" />
+                                                  <div class="check"></div>
+                                              </li>
+                                              <li value="3" class="radioBox">
+                                                  <span class="star">
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon-starred"></i>
+                                                      <i class="icon-starred"></i>
+                                                  </span>
+                                                  &nbsp;
+                                                  <span>3 STARS</span>
+                                                  <input value="star" name="star" type="radio" checked="" />
+                                                  <div class="check"></div>
+                                              </li>
+                                              <li value="4" class="radioBox">
+                                                  <span class="star">
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon-starred"></i>
+                                                  </span>
+                                                  &nbsp;
+                                                  <span>4 STARS</span>
+                                                  <input value="star" name="star" type="radio" checked="" />
+                                                  <div class="check"></div>
+                                              </li>
+                                              <li value="5" class="radioBox">
+                                                  <span class="star">
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                      <i class="icon icon-solid-star"></i>
+                                                  </span>
+                                                  &nbsp;
+                                                  <span class="star">5 STARS</span>
+                                                  <input value="star" name="star" type="radio" checked="" />
+                                                  <div class="check"></div>
+                                              </li>
+                                              <li value="ANY" class="radioBox active">
+                                                  <span>ANY</span>
+                                                  <input value="star" name="star" type="radio" checked="" />
+                                                  <div class="check"></div>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="hotel-room-add hotel-mt">
+                              <div class="row text-right">
+                                  <div class="col-sm-1 col-sm-push-11">
+                                      <button tabindex="8" type="button" class="btn lets-go-btn" onclick="submitHotelForm();">
+                                          <i class="lets-go-btn-icon icon-compass"></i>
+                                          <span class="lets-go-btn-txt">LET'S GO</span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>

@@ -3,9 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { FlightComponent } from './flight/flight.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/flight', pathMatch: 'full' },
   { path: 'flight', component: FlightComponent },
   { path: '**', component: PageNotFoundComponent}
 ];
@@ -15,7 +14,7 @@ const routes: Routes = [
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
-
+ 
 export class AppRoutingModule { }
 export const routingComponents = [FlightComponent,PageNotFoundComponent]
 

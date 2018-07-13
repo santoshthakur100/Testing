@@ -1,0 +1,1000 @@
+.payment-component {
+    .strip {
+      position: relative;
+      overflow: hidden;
+      &.success {
+        padding: 10px;
+        background: #00c4b4;
+      }
+      &.info {
+        padding: 10px;
+        background: #f3ea59;
+      }
+    }
+    form > .container {
+      font-family: "ProximaNova-Bold";
+      .ui-datepicker {
+        .ui-datepicker-prev, .ui-datepicker-next {
+          top: 16px;
+        }
+      }
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+    .payment-go-back {
+      position: absolute;
+      bottom: -60px;
+      color: #fff;
+    }
+    .select-icon {
+      select {
+        -moz-appearance: initial;
+        -webkit-appearance: initial;
+      }
+      position: relative;
+      z-index: 1;
+      &:after {
+        content: "\e94e";
+        font-family: 'icomoon';
+        display: inline-block;
+        font-size: 9px;
+        color: #333;
+        position: absolute;
+        top: 12px;
+        right: 0px;
+        z-index: -1;
+      }
+    }
+    .calender-icon {
+      position: relative;
+      z-index: 1;
+      &:after {
+        content: "\e90c";
+        font-family: icomoon;
+        display: inline-block;
+        font-size: 14px;
+        color: #333;
+        position: absolute;
+        top: 8px;
+        right: 0px;
+        z-index: -1;
+      }
+    }
+    .cards-icon {
+      position: relative;
+      &.mc:after {
+        background-position: -109px -7px;
+      }
+      &.ae:after {
+        background-position: -153px -7px;
+      }
+      &.dn:after {
+        background-position: -201px -7px;
+      }
+      &.jcb:after {
+        background-position: -242px -7px;
+      }
+      &.ms:after {
+        background-position: -290px -7px;
+      }
+      &.visa:after {
+        background-position: -336px -7px;
+      }
+      &.dc:after {
+        background-position: -446px -7px;
+      }
+      &:after {
+        content: ' ';
+        background: url(/src/assets/cards.png) 9px -7px no-repeat;
+        position: absolute;
+        top: 4px;
+        right: 0px;
+        width: 46px;
+        height: 28px;
+      }
+    }
+    .img-card {
+      background: url(/src/assets/cards.png) -47px -1px no-repeat;
+      width: 56px;
+      height: 36px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .img-card2 {
+      background: url(/src/assets/cards.png) -386px -1px no-repeat;
+      width: 56px;
+      height: 36px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .btn-submit, .ui-datepicker .ui-datepicker-buttonpane button {
+      background: #00c4b4;
+      color: #fff;
+      padding: 15px 35px;
+    }
+  }
+  
+  .ui-datepicker .ui-datepicker-buttonpane .payment-component button {
+    background: #00c4b4;
+    color: #fff;
+    padding: 15px 35px;
+  }
+  
+  .payment-component {
+    .btn-submit:hover, .ui-datepicker .ui-datepicker-buttonpane button:hover {
+      background: #2a2c2c;
+    }
+  }
+  
+  .ui-datepicker .ui-datepicker-buttonpane .payment-component button:hover {
+    background: #2a2c2c;
+  }
+  
+  .payment-component {
+    .payment-price-details {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .heading-tab {
+      padding: 20px;
+      .icon {
+        vertical-align: middle;
+      }
+      .heading-tab-txt {
+        line-height: 20px;
+        vertical-align: super;
+        padding-left: 5px;
+        vertical-align: middle;
+      }
+      &.gray {
+        background: #d4d4d4;
+        color: #fff;
+      }
+      &.blue {
+        background: #2059a8;
+        color: #fff;
+      }
+      &.green {
+        background: #00c4b4;
+        color: #fff;
+      }
+      &.black {
+        background: #333;
+        color: #fff;
+      }
+    }
+    .panel-travel-details, .panel-purchase-details {
+      font-family: "ProximaNova-Bold";
+    }
+    .panel-travel-details .traveller-section, .panel-purchase-details .traveller-section {
+      padding: 10px 20px 40px 20px;
+      margin-bottom: 10px;
+    }
+    .panel-travel-details .traveller-section label, .panel-purchase-details .traveller-section label {
+      margin-bottom: 0;
+    }
+    .panel-travel-details .traveller-section sup.star, .panel-purchase-details .traveller-section sup.star {
+      color: red;
+      font-size: 100%;
+      vertical-align: text-bottom;
+    }
+    .panel-travel-details .traveller-section:hover, .panel-purchase-details .traveller-section:hover, .panel-travel-details .traveller-section.active, .panel-purchase-details .traveller-section.active {
+      background: #f3f3f3;
+    }
+    .panel-travel-details .traveller-section .form-control, .panel-purchase-details .traveller-section .form-control {
+      font-size: 16px;
+    }
+    .panel-travel-details .traveller-section .row, .panel-purchase-details .traveller-section .row {
+      padding: 10px 0;
+    }
+    .panel-travel-details .traveller-section .row label, .panel-purchase-details .traveller-section .row label {
+      font-family: 'ProximaNova-Semibold';
+      font-weight: normal;
+      font-size: 14px;
+      color: #737373;
+    }
+    .payment-form-component {
+      select, .form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #333;
+        color: #333;
+        box-shadow: none;
+        padding: 0px 10px 0px 0;
+        display: block;
+      }
+    }
+    .current-state {
+      margin-top: 70px;
+      color: #fff;
+      .satate-name {
+        margin: 0;
+        small {
+          color: #fff;
+        }
+      }
+    }
+    .price-detail-component {
+      background: #f1f1f1;
+      padding: 20px;
+      font-family: 'ProximaNova-Bold';
+      font-size: 16px;
+      margin-top: 40px;
+      [role=price] sup {
+        top: -3px;
+      }
+      .row {
+        padding: 10px 0;
+        color: #8c8c8c;
+        &:last-child, &:nth-child(2) {
+          color: #333 !important;
+        }
+        .adult-count, .room-count {
+          font-family: "ProximaNova-Regular";
+        }
+      }
+      .have-a-promocode .btn-apply {
+        background: #333;
+        color: #fff;
+        &:hover {
+          background: #00c4b4;
+        }
+        &.error {
+          background: red !important;
+        }
+        &.success {
+          background: #00c4b4;
+        }
+      }
+      .total-amount .total-txt {
+        display: inline-block;
+        padding-top: 15px;
+        font-family: "ProximaNova-Extrabld";
+      }
+    }
+    .payment-itinerary {
+      .payment-modify-search {
+        padding: 20px 0px;
+        .search {
+          line-height: 18px;
+          cursor: pointer;
+          transition: all 0.35s ease-in-out;
+          &:hover {
+            color: #00c4b4;
+          }
+          .icon {
+            vertical-align: middle;
+            font-size: 12px;
+          }
+        }
+      }
+      .filter-dark-sort {
+        font-family: 'ProximaNova-Extrabld';
+        padding-top: 25px;
+        padding-bottom: 25px;
+        letter-spacing: 1px;
+        height: 73px;
+        .icon-slider-down {
+          display: inline-block;
+          transition: all 0.2s linear;
+          &.rotate {
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+          }
+        }
+        &.black {
+          background: #333;
+        }
+        &.green {
+          background: #00c4b4;
+        }
+        .icon {
+          font-size: 20px;
+          vertical-align: text-bottom;
+          padding-right: 10px;
+          color: #fff;
+        }
+        [class*='col-sm-'] {
+          position: relative;
+          color: #bfbfbf;
+          border-right: 3px solid gray;
+          &:last-child, &:nth-last-child(2) {
+            border-right: none;
+          }
+        }
+      }
+      .payment-flight-details {
+        margin-top: 20px;
+        .sub-text {
+          color: #999;
+        }
+      }
+      .payment-result-container {
+        &:after {
+          clear: both;
+        }
+        .payment-result-container-hover {
+          padding: 20px 15px 0;
+          .near-by-search {
+            margin-left: -15px;
+            margin-right: -15px;
+            overflow: hidden;
+            margin-top: -20px;
+            margin-bottom: 20px;
+            div {
+              padding: 10px;
+              overflow: hidden;
+              height: 35px;
+            }
+          }
+          .row {
+            margin-left: 0;
+            margin-right: 0;
+          }
+          &:hover {
+            background: #f6f5f5;
+          }
+        }
+        .view-details {
+          cursor: pointer;
+        }
+        .result-trip-price .trip {
+          margin-top: -7px;
+          padding-left: 13px;
+        }
+        .result-destination {
+          padding-top: 10px;
+        }
+      }
+      .tripify-deal .tripify-deal-alt {
+        padding: 0px;
+        text-align: center;
+        width: 54px;
+      }
+      .result-times {
+        margin-left: 0px;
+        margin-top: 5px;
+        li {
+          padding: 0;
+          &:nth-child(2) {
+            color: #888;
+            padding: 0 30px;
+          }
+        }
+      }
+      .results-data .result-stops {
+        background: #2a2c2c;
+        height: 2px;
+        width: 220px;
+        position: relative;
+        margin-top: -5px;
+        .left, .right {
+          position: absolute;
+          display: block;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          border: 2px solid #2a2c2c;
+          top: -9px;
+          background: #fff;
+        }
+        .left {
+          left: 2;
+        }
+        .right {
+          right: 0;
+        }
+        .name {
+          display: block;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          color: #ccc;
+          background: #fff;
+          padding: 1px 10px;
+          position: absolute;
+          left: 40%;
+          top: -11px;
+          &.p1 {
+            left: 25%;
+          }
+          &.p2 {
+            left: 50%;
+          }
+        }
+      }
+      .htl-section-one {
+        font-size: 17px;
+        padding: 25px 0;
+        font-family: "ProximaNova-Bold";
+        .htl-name {
+          padding-bottom: 10px;
+          font-size: 20px;
+        }
+        .htl-info {
+          color: #8c8c8c;
+          li a {
+            color: #00c4b4;
+            &:hover {
+              color: #333;
+            }
+          }
+        }
+      }
+      .htl-section-two {
+        font-size: 17px;
+        padding: 25px 0;
+        font-family: "ProximaNova-Bold";
+        [class*='col-sm'] {
+          border-right: 1px solid #8c8c8c;
+          margin: 5px 0;
+          &:last-child, &:nth-child(3) {
+            border-right: none;
+          }
+        }
+        dl.room-info {
+          display: inline-block;
+          margin-bottom: 0;
+          padding-left: 5px;
+          dt {
+            display: inline-block;
+            vertical-align: top;
+          }
+          dd {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 5px;
+            color: #8c8c8c;
+            .block {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+// .payment-component .strip {
+//     position: relative;
+//     overflow: hidden
+// }
+
+// .payment-component .strip.success {
+//     padding: 10px;
+//     background: #00c4b4
+// }
+
+// .payment-component .strip.info {
+//     padding: 10px;
+//     background: #f3ea59
+// }
+
+// .payment-component form>.container {
+//     font-family: 'ProximaNova-Bold'
+// }
+
+// .payment-component form>.container .ui-datepicker .ui-datepicker-prev,.payment-component form>.container .ui-datepicker .ui-datepicker-next {
+//     top: 16px
+// }
+
+// .payment-component .form-group {
+//     margin-bottom: 0
+// }
+
+// .payment-component .payment-go-back {
+//     position: absolute;
+//     bottom: -60px;
+//     color: #fff
+// }
+
+// .payment-component .select-icon select {
+//     -moz-appearance: initial;
+//     -webkit-appearance: initial
+// }
+
+// .payment-component .select-icon {
+//     position: relative;
+//     z-index: 1
+// }
+
+// .payment-component .select-icon:after {
+//     content: "\e94e";
+//     font-family: 'icomoon';
+//     display: inline-block;
+//     font-size: 9px;
+//     color: #333;
+//     position: absolute;
+//     top: 12px;
+//     right: 0px;
+//     z-index: -1
+// }
+
+// .payment-component .calender-icon {
+//     position: relative;
+//     z-index: 1
+// }
+
+// .payment-component .calender-icon:after {
+//     content: "\e90c";
+//     font-family: icomoon;
+//     display: inline-block;
+//     font-size: 14px;
+//     color: #333;
+//     position: absolute;
+//     top: 8px;
+//     right: 0px;
+//     z-index: -1
+// }
+
+// .payment-component .cards-icon {
+//     position: relative
+// }
+
+// .payment-component .cards-icon.mc:after {
+//     background-position: -109px -7px
+// }
+
+// .payment-component .cards-icon.ae:after {
+//     background-position: -153px -7px
+// }
+
+// .payment-component .cards-icon.dn:after {
+//     background-position: -201px -7px
+// }
+
+// .payment-component .cards-icon.jcb:after {
+//     background-position: -242px -7px
+// }
+
+// .payment-component .cards-icon.ms:after {
+//     background-position: -290px -7px
+// }
+
+// .payment-component .cards-icon.visa:after {
+//     background-position: -336px -7px
+// }
+
+// .payment-component .cards-icon.dc:after {
+//     background-position: -446px -7px
+// }
+
+// .payment-component .cards-icon:after {
+//     content: ' ';
+//     background: url(/src/assets/cards.png) 9px -7px no-repeat;
+//     position: absolute;
+//     top: 4px;
+//     right: 0px;
+//     width: 46px;
+//     height: 28px
+// }
+
+// .payment-component .img-card {
+//     background: url(/src/assets/cards.png) -47px -1px no-repeat;
+//     width: 56px;
+//     height: 36px;
+//     display: inline-block;
+//     vertical-align: middle
+// }
+
+// .payment-component .img-card2 {
+//     background: url(/src/assets/cards.png) -386px -1px no-repeat;
+//     width: 56px;
+//     height: 36px;
+//     display: inline-block;
+//     vertical-align: middle
+// }
+
+// .payment-component .btn-submit,.payment-component .ui-datepicker .ui-datepicker-buttonpane button,.ui-datepicker .ui-datepicker-buttonpane .payment-component button {
+//     background: #00c4b4;
+//     color: #fff;
+//     padding: 15px 35px
+// }
+
+// .payment-component .btn-submit:hover,.payment-component .ui-datepicker .ui-datepicker-buttonpane button:hover,.ui-datepicker .ui-datepicker-buttonpane .payment-component button:hover {
+//     background: #2a2c2c
+// }
+
+// .payment-component .payment-price-details {
+//     margin-top: 30px;
+//     margin-bottom: 30px
+// }
+
+// .payment-component .heading-tab {
+//     padding: 20px
+// }
+
+// .payment-component .heading-tab .icon {
+//     vertical-align: middle
+// }
+
+// .payment-component .heading-tab .heading-tab-txt {
+//     line-height: 20px;
+//     vertical-align: super;
+//     padding-left: 5px;
+//     vertical-align: middle
+// }
+
+// .payment-component .heading-tab.gray {
+//     background: #d4d4d4;
+//     color: #fff
+// }
+
+// .payment-component .heading-tab.blue {
+//     background: #2059a8;
+//     color: #fff
+// }
+
+// .payment-component .heading-tab.green {
+//     background: #00c4b4;
+//     color: #fff
+// }
+
+// .payment-component .heading-tab.black {
+//     background: #333;
+//     color: #fff
+// }
+
+// .payment-component .panel-travel-details,.payment-component .panel-purchase-details {
+//     font-family: 'ProximaNova-Bold'
+// }
+
+// .payment-component .panel-travel-details .traveller-section,.payment-component .panel-purchase-details .traveller-section {
+//     padding: 10px 20px 40px 20px;
+//     margin-bottom: 10px
+// }
+
+// .payment-component .panel-travel-details .traveller-section label,.payment-component .panel-purchase-details .traveller-section label {
+//     margin-bottom: 0
+// }
+
+// .payment-component .panel-travel-details .traveller-section sup.star,.payment-component .panel-purchase-details .traveller-section sup.star {
+//     color: red;
+//     font-size: 100%;
+//     vertical-align: text-bottom
+// }
+
+// .payment-component .panel-travel-details .traveller-section:hover,.payment-component .panel-purchase-details .traveller-section:hover,.payment-component .panel-travel-details .traveller-section.active,.payment-component .panel-purchase-details .traveller-section.active {
+//     background: #f3f3f3
+// }
+
+// .payment-component .panel-travel-details .traveller-section .form-control,.payment-component .panel-purchase-details .traveller-section .form-control {
+//     font-size: 16px
+// }
+
+// .payment-component .panel-travel-details .traveller-section .row,.payment-component .panel-purchase-details .traveller-section .row {
+//     padding: 10px 0
+// }
+
+// .payment-component .panel-travel-details .traveller-section .row label,.payment-component .panel-purchase-details .traveller-section .row label {
+//     font-family: 'ProximaNova-Semibold';
+//     font-weight: normal;
+//     font-size: 14px;
+//     color: #737373
+// }
+
+// .payment-component .payment-form-component select,.payment-component .payment-form-component .form-control {
+//     background: transparent;
+//     border: none;
+//     border-bottom: 1px solid #333;
+//     color: #333;
+//     box-shadow: none;
+//     padding: 0px 10px 0px 0;
+//     display: block
+// }
+
+// .payment-component .current-state {
+//     margin-top: 70px;
+//     color: #fff
+// }
+
+// .payment-component .current-state .satate-name {
+//     margin: 0
+// }
+
+// .payment-component .current-state .satate-name small {
+//     color: #fff
+// }
+
+// .payment-component .price-detail-component {
+//     background: #f1f1f1;
+//     padding: 20px;
+//     font-family: 'ProximaNova-Bold';
+//     font-size: 16px;
+//     margin-top: 40px
+// }
+
+// .payment-component .price-detail-component [role=price] sup {
+//     top: -3px
+// }
+
+// .payment-component .price-detail-component .row {
+//     padding: 10px 0;
+//     color: #8c8c8c
+// }
+
+// .payment-component .price-detail-component .row:last-child {
+//     color: #333 !important
+// }
+
+// .payment-component .price-detail-component .row:nth-child(2) {
+//     color: #333 !important
+// }
+
+// .payment-component .price-detail-component .row .adult-count,.payment-component .price-detail-component .row .room-count {
+//     font-family: "ProximaNova-Regular"
+// }
+
+// .payment-component .price-detail-component .have-a-promocode .btn-apply {
+//     background: #333;
+//     color: #fff
+// }
+
+// .payment-component .price-detail-component .have-a-promocode .btn-apply:hover {
+//     background: #00c4b4
+// }
+
+// .payment-component .price-detail-component .have-a-promocode .btn-apply.error {
+//     background: red !important
+// }
+
+// .payment-component .price-detail-component .have-a-promocode .btn-apply.success {
+//     background: #00c4b4
+// }
+
+// .payment-component .price-detail-component .total-amount .total-txt {
+//     display: inline-block;
+//     padding-top: 15px;
+//     font-family: 'ProximaNova-Extrabld'
+// }
+
+// .payment-component .payment-itinerary .payment-modify-search {
+//     padding: 20px 0px
+// }
+
+// .payment-component .payment-itinerary .payment-modify-search .search {
+//     line-height: 18px;
+//     cursor: pointer;
+//     transition: all 0.35s ease-in-out
+// }
+
+// .payment-component .payment-itinerary .payment-modify-search .search:hover {
+//     color: #00c4b4
+// }
+
+// .payment-component .payment-itinerary .payment-modify-search .search .icon {
+//     vertical-align: middle;
+//     font-size: 12px
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort {
+//     font-family: 'ProximaNova-Extrabld';
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+//     letter-spacing: 1px;
+//     height: 73px
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort .icon-slider-down {
+//     display: inline-block;
+//     transition: all 0.2s linear
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort .icon-slider-down.rotate {
+//     transform: rotate(-90deg);
+//     -webkit-transform: rotate(-90deg);
+//     -moz-transform: rotate(-90deg);
+//     -o-transform: rotate(-90deg);
+//     -ms-transform: rotate(-90deg)
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort.black {
+//     background: #333
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort.green {
+//     background: #00c4b4
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort .icon {
+//     font-size: 20px;
+//     vertical-align: text-bottom;
+//     padding-right: 10px;
+//     color: #fff
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort [class*='col-sm-'] {
+//     position: relative;
+//     color: #bfbfbf;
+//     border-right: 3px solid gray
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort [class*='col-sm-']:last-child {
+//     border-right: none
+// }
+
+// .payment-component .payment-itinerary .filter-dark-sort [class*='col-sm-']:nth-last-child(2) {
+//     border-right: none
+// }
+
+// .payment-component .payment-itinerary .payment-flight-details {
+//     margin-top: 20px
+// }
+
+// .payment-component .payment-itinerary .payment-flight-details .sub-text {
+//     color: #999
+// }
+
+// .payment-component .payment-itinerary .payment-result-container:after {
+//     clear: both
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .payment-result-container-hover {
+//     padding: 20px 15px 0
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .payment-result-container-hover .near-by-search {
+//     margin-left: -15px;
+//     margin-right: -15px;
+//     overflow: hidden;
+//     margin-top: -20px;
+//     margin-bottom: 20px
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .payment-result-container-hover .near-by-search div {
+//     padding: 10px;
+//     overflow: hidden;
+//     height: 35px
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .payment-result-container-hover .row {
+//     margin-left: 0;
+//     margin-right: 0
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .payment-result-container-hover:hover {
+//     background: #f6f5f5
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .view-details {
+//     cursor: pointer
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .result-trip-price .trip {
+//     margin-top: -7px;
+//     padding-left: 13px
+// }
+
+// .payment-component .payment-itinerary .payment-result-container .result-destination {
+//     padding-top: 10px
+// }
+
+// .payment-component .payment-itinerary .tripify-deal .tripify-deal-alt {
+//     padding: 0px;
+//     text-align: center;
+//     width: 54px
+// }
+
+// .payment-component .payment-itinerary .result-times {
+//     margin-left: 0px;
+//     margin-top: 5px
+// }
+
+// .payment-component .payment-itinerary .result-times li {
+//     padding: 0
+// }
+
+// .payment-component .payment-itinerary .result-times li:nth-child(2) {
+//     color: #888;
+//     padding: 0 30px
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops {
+//     background: #2a2c2c;
+//     height: 2px;
+//     width: 220px;
+//     position: relative;
+//     margin-top: -5px
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops .left,.payment-component .payment-itinerary .results-data .result-stops .right {
+//     position: absolute;
+//     display: block;
+//     height: 20px;
+//     width: 20px;
+//     border-radius: 50%;
+//     border: 2px solid #2a2c2c;
+//     top: -9px;
+//     background: #fff
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops .left {
+//     left: 2
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops .right {
+//     right: 0
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops .name {
+//     display: block;
+//     border-radius: 4px;
+//     border: 1px solid #ccc;
+//     color: #ccc;
+//     background: #fff;
+//     padding: 1px 10px;
+//     position: absolute;
+//     left: 40%;
+//     top: -11px
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops .name.p1 {
+//     left: 25%
+// }
+
+// .payment-component .payment-itinerary .results-data .result-stops .name.p2 {
+//     left: 50%
+// }
+
+// .payment-component .payment-itinerary .htl-section-one {
+//     font-size: 17px;
+//     padding: 25px 0;
+//     font-family: 'ProximaNova-Bold'
+// }
+
+// .payment-component .payment-itinerary .htl-section-one .htl-name {
+//     padding-bottom: 10px;
+//     font-size: 20px
+// }
+
+// .payment-component .payment-itinerary .htl-section-one .htl-info {
+//     color: #8c8c8c
+// }
+
+// .payment-component .payment-itinerary .htl-section-one .htl-info li a {
+//     color: #00c4b4
+// }
+
+// .payment-component .payment-itinerary .htl-section-one .htl-info li a:hover {
+//     color: #333
+// }
+
+// .payment-component .payment-itinerary .htl-section-two {
+//     font-size: 17px;
+//     padding: 25px 0;
+//     font-family: 'ProximaNova-Bold'
+// }
+
+// .payment-component .payment-itinerary .htl-section-two [class*='col-sm'] {
+//     border-right: 1px solid #8c8c8c;
+//     margin: 5px 0
+// }
+
+// .payment-component .payment-itinerary .htl-section-two [class*='col-sm']:last-child,.payment-component .payment-itinerary .htl-section-two [class*='col-sm']:nth-child(3) {
+//     border-right: none
+// }
+
+// .payment-component .payment-itinerary .htl-section-two dl.room-info {
+//     display: inline-block;
+//     margin-bottom: 0;
+//     padding-left: 5px
+// }
+
+// .payment-component .payment-itinerary .htl-section-two dl.room-info dt {
+//     display: inline-block;
+//     vertical-align: top
+// }
+
+// .payment-component .payment-itinerary .htl-section-two dl.room-info dd {
+//     display: inline-block;
+//     vertical-align: top;
+//     padding-left: 5px;
+//     color: #8c8c8c
+// }
+
+// .payment-component .payment-itinerary .htl-section-two dl.room-info dd .block {
+//     display: block
+// }

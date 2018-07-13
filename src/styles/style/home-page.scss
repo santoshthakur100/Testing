@@ -1,0 +1,492 @@
+
+.dynamicdeal-component .dynamicdeal-tab {
+    margin-bottom: 30px;
+    margin: 0 auto
+}
+
+.dynamicdeal-component .dynamicdeal-tab b {
+    font-weight: bold
+}
+
+.dynamicdeal-component .dynamicdeal-tab .icon {
+    font-size: 10px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section {
+    padding: 24px 35px;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 50px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section:hover {
+    background: #f3ea59
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section:hover .section-icon {
+    display: block;
+    opacity: 1
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section:hover .section-icon .dynamic-hotel-img>.devider {
+    display: block
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section:hover .dynamic-hotel-img>.devider {
+    display: block
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .deal-date {
+    font-family: "proxima_nova_rgbold";
+    margin-top: -5px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .dynamic-hotel-img {
+    position: relative
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .dynamic-hotel-img:hover .devider {
+    display: block
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .dynamic-hotel-img .devider {
+    min-height: 149px;
+    width: 14px;
+    position: absolute;
+    background: white;
+    top: -24px;
+    bottom: 2px;
+    right: 0;
+    display: none
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .dynamic-hotel-img .devider .line1 {
+    border-left: 2px dashed #2a2c2c;
+    height: 100%;
+    background: #f3ea59;
+    border-radius: 8px 0 0 8px;
+    width: 7px;
+    float: right
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .dynamic-hotel-img .devider .line2 {
+    height: 100%;
+    background: #f3ea59;
+    border-radius: 0 8px 8px 0;
+    width: 7px;
+    float: left
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .h2,.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .h3 {
+    margin: 0
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .h2 small,.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .h3 small {
+    display: block
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .country-section {
+    margin-top: 20px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .country-section li {
+    vertical-align: middle;
+    padding-left: 0
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .country-section li .deal-city-name {
+    position: absolute;
+    top: 5px;
+    font-family: 'ProximaNova-Extrabld'
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .country-section li .h2 {
+    font-weight: bold
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .country-section li .h2>div {
+    font-family: 'ProximaNova-Extrabld'
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .country-section li .h2 .fs60 {
+    font-size: 60px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .deal-date {
+    font-family: 'ProximaNova-Bold'
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .travel-amount {
+    font-family: 'ProximaNova-Bold'
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .travel-amount sup {
+    font-size: 22px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .hotel-image {
+    margin: -25px -15px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .hotel-image figure>img {
+    display: inline
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .hotel-image .wether {
+    font-family: 'ProximaNova-Semibold';
+    font-size: 26px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section .section-icon {
+    position: absolute;
+    top: 42%;
+    right: 35px;
+    display: none;
+    cursor: pointer;
+    opacity: 0
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel {
+    font-size: 16px;
+    font-family: 'ProximaNova-Extrabld';
+    height: 170px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel .hotel-discription div {
+    margin-bottom: 8px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel .hotel-discription div:last-child {
+    margin-bottom: 0
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel .hotel-discription div.text1 {
+    font-size: 20px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel .travel-amount .amount {
+    font-size: 60px;
+    line-height: 60px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel .travel-amount small {
+    font-size: 24px
+}
+
+.dynamicdeal-component .dynamicdeal-panel .dynamicdeal-panel-section.hotel-deal-panel .hotel-image2 {
+    margin-top: -24px;
+    margin-left: -35px;
+    margin-bottom: -24px
+}
+
+.home-component .ui-autocomplete {
+    box-shadow: none;
+    background-color: #666
+}
+
+.home-component .ui-menu {
+    padding: 0;
+    min-height: initial
+}
+
+.home-component .ui-menu .ui-menu-item-wrapper {
+    padding: 18px 20px;
+    color: #fff;
+    border-bottom: 1px solid #2a2c2c;
+    width: auto
+}
+
+.home-component .ui-menu .ui-menu-item-wrapper:hover {
+    background: #00c4b4
+}
+
+.home-component .ui-menu .ui-menu-item-wrapper.ui-state-active {
+    background: #00c4b4
+}
+
+.home-component .search-component {
+    font-family: "ProximaNova-Bold"
+}
+
+.home-component .search-component .container {
+    position: relative
+}
+
+.home-component .search-component .engine-component {
+    position: relative;
+    z-index: 1
+}
+
+.home-component .search-component .engine-component .engine-component-flight,.home-component .search-component .engine-component .engine-component-hotel {
+    height: 100%
+}
+
+.home-component .search-component .hotel-star-rating li:hover .icon-Starred {
+    color: #999
+}
+
+.home-component .search-component .search-block [class*='col-sm'] {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.home-component .search-component .search-block.hotel-panel .hotel-mt {
+    margin-top: 30px
+}
+
+.home-component .search-component .search-block .search-row {
+    padding: 0px 65px;
+    position: relative
+}
+
+@media only screen and (min-width: 320px) and (max-width: 478px) {
+    .home-component .search-component .search-block .search-row {
+        padding:0px 15px
+    }
+}
+
+.home-component .search-component .search-block .search-row .close-box {
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    cursor: pointer
+}
+
+.home-component .search-component .search-block .search-row .row {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.home-component .search-component .search-block .search-row .depart {
+    position: relative
+}
+
+.home-component .search-component .search-block .search-row .depart .input-empty {
+    position: absolute;
+    right: 13px;
+    top: 17px;
+    color: #00ab9d;
+    cursor: pointer;
+    display: none
+}
+
+.home-component .search-component .search-block .search-row .depart .depart-temp {
+    position: absolute;
+    top: 30%;
+    right: 30%
+}
+
+.home-component .search-component .search-block .search-row .icon {
+    position: absolute;
+    left: 0px;
+    top: 13px
+}
+
+.home-component .search-component .search-block .search-row .icon2 {
+    position: absolute;
+    left: 0px;
+    top: 68px
+}
+
+.home-component .search-component .search-block .search-row .iconFl {
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    top: calc(50% - 15px)
+}
+
+.home-component .search-component .search-block .search-row .input-icon {
+    font-size: 20px;
+    position: absolute;
+    left: 13px;
+    top: 19px;
+    color: #666;
+    opacity: 0.5
+}
+
+.home-component .search-component .search-block .search-row .calender {
+    padding-left: 47px
+}
+
+.home-component .search-component .search-block .search-row .ui-autocomplete-input {
+    padding-left: 42px
+}
+
+.home-component .search-component .search-block .hotel-room-add {
+    padding: 0px 65px;
+    position: relative
+}
+
+.home-component .search-component .search-block .hotel-room-add .search-hotel-name .icon {
+    position: absolute;
+    top: 21px;
+    left: 13px
+}
+
+.home-component .search-component .search-block .hotel-room-add .search-hotel-name input {
+    padding-left: 42px
+}
+
+.home-component .search-component .search-block .hotel-room-add .room-text {
+    padding: 15px;
+    color: #fff
+}
+
+.home-component .search-component .search-block .hotel-room-add .ad-search {
+    padding: 15px 0;
+    color: #fff
+}
+
+.home-component .search-component .search-block .hotel-room-add .row {
+    margin-left: 5px;
+    margin-right: -10px
+}
+
+.home-component .search-component .search-block .hotel-room-add .row [class*='col-sm'] {
+    padding-left: 0;
+    padding-right: 10px
+}
+
+.home-component .search-component .search-block .classes {
+    width: calc(100% - 58px);
+    float: left;
+    padding-left: 20px
+}
+
+.home-component .search-component .search-block input[type='text'] {
+    padding: 20px 10px 19px 10px;
+    width: 100%;
+    overflow: hidden;
+    color: #333;
+    border: none
+}
+
+.home-component .search-component .search-block input[type='text']:focus ~ .input-icon {
+    color: #333;
+    opacity: 1
+}
+
+.home-component .search-component .search-block input[type='text'].tocity {
+    padding: 20px 0px 20px 0px;
+    font-size: 140px;
+    line-height: 140px;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    text-decoration: underline;
+    font-family: 'ProximaNova-Extrabld'
+}
+
+.home-component .search-component .search-block input[type='text'].tocity::placeholder {
+    color: rgba(255,255,255,0.7)
+}
+
+.home-component .search-component .pipe {
+    position: relative
+}
+
+.home-component .search-component .pipe:before {
+    content: "";
+    width: 2px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 21px;
+    z-index: 1;
+    background: #2a2c2c
+}
+
+.home-component .search-component .customize-select-box .dropdown-menu li {
+    padding: 0px 20px 15px 20px
+}
+
+.home-component .search-component .customize-select-box .dropdown-menu li input[type='text'] {
+    width: 20px;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    padding: 0px;
+    color: #666
+}
+
+.home-component .search-component .customize-select-box .dropdown-menu li [class*='col-sm'] {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.home-component .search-bottom {
+    padding: 17px 65px;
+    overflow: hidden;
+    font-size: 16px
+}
+
+.home-component .search-bottom .advance_option {
+    color: #fff;
+    cursor: pointer
+}
+
+.home-component .search-bottom label {
+    cursor: pointer;
+    font-weight: normal
+}
+
+.home-component .traveller {
+    position: relative
+}
+
+.home-component .traveller .adult_dropDown {
+    display: block;
+    width: 220px;
+    background: #333333;
+    padding: 20px;
+    position: absolute;
+    left: 0px;
+    top: 62px;
+    z-index: 2;
+    border-top: 4px solid #00c4b4
+}
+
+.home-component .traveller .adult_dropDown ul {
+    list-style: none
+}
+
+.home-component .traveller .adult_dropDown ul li {
+    width: 100%;
+    overflow: hidden;
+    color: #716d6d;
+    text-transform: uppercase;
+    padding-bottom: 25px
+}
+
+.home-component .traveller .adult_dropDown ul li:hover .col {
+    color: #00c4b4
+}
+
+.home-component .traveller .adult_dropDown ul li small {
+    width: 60px;
+    float: left
+}
+
+.home-component .traveller .adult_dropDown ul li .col {
+    width: 70px;
+    float: left
+}
+
+.home-component .traveller .adult_dropDown ul li .icons {
+    width: 45px;
+    float: right
+}
+
+.home-component .traveller .adult_dropDown ul li a {
+    color: #716d6d;
+    float: right;
+    margin: 0px 4px
+}
+
+.home-component .traveller .adult_dropDown ul li a:hover {
+    color: #fff
+}

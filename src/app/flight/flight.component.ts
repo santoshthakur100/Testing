@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-flight',
   templateUrl: './flight.component.html',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FlightComponent implements OnInit {
 
   constructor() { } 
-
+ 
   ngOnInit() {
   }
 

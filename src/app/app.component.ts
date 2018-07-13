@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tripify';
 
+  minDate = new Date(2000, 0, 1);
+  maxDate = new Date(2020, 0, 1);
+  
+  title = 'Tripify';
 
   name:string = '';
   age:number;

@@ -1,0 +1,75 @@
+.justtravel-component {
+    position: relative;
+    margin-top: -50px;
+    font-family: ProximaNova-Semibold;
+    .justtravel-component-box {
+      color: #fff;
+      padding: 75px 75px 0px;
+      [class*='col-sm'] {
+        padding: 0;
+      }
+      &.background-black {
+        background: #2a2c2c;
+      }
+      p {
+        font-size: 26px;
+        color: #00c4b4;
+      }
+      .learn-more {
+        position: absolute;
+        background: #eee;
+        padding: 10px 15px;
+        color: #2a2c2c;
+        bottom: 0;
+        z-index: 1;
+        cursor: pointer;
+        &:hover {
+          background: #f3ea59;
+          .icon-compass {
+            font-size: 25px;
+            transition: all 0.3s linear;
+          }
+        }
+        li {
+          padding: 0 12px;
+        }
+        .learn-more-text {
+          line-height: 18px;
+          border-left: 1px solid #2a2c2c;
+        }
+        .learn-more-icon {
+          font-size: 22px;
+        }
+      }
+      .where-to {
+        overflow: hidden;
+        height: 255px;
+        font-size: 350px;
+        color: #00c4b4;
+      }
+      &.background-green {
+        background: #00c4b4;
+        p {
+          color: #2a2c2c;
+        }
+        .justtravel-component-collapse {
+          padding: 0;
+          .block {
+            padding-right: 50px;
+          }
+          h3 span {
+            display: block;
+          }
+          p {
+            color: #fff;
+            letter-spacing: 2px;
+          }
+        }
+        .where-to {
+          color: #2059a8;
+          height: 100%;
+          margin-bottom: -70px;
+        }
+      }
+    }
+  }

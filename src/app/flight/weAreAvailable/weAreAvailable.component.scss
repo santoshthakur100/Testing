@@ -1,0 +1,37 @@
+.support-component {
+    padding: 70px 0 80px 0;
+    .backDrop-image {
+      position: relative;
+      .backDrop {
+        background: #d4f3f0;
+        transform: skew(30deg);
+        position: absolute;
+        top: -20px;
+        bottom: -20px;
+        height: 315px;
+        left: 50%;
+        margin-left: -75px;
+        width: 150px;
+        z-index: -1;
+      }
+    }
+    p {
+      font-family: 'ProximaNova-Bold';
+      padding: 20px 0px 20px 0px;
+      margin-bottom: 0;
+    }
+    .title {
+      font-family: 'ProximaNova-Extrabld';
+      line-height: 48px;
+      padding-top: 18px;
+    }
+    .tel-num {
+      font-family: 'ProximaNova-Extrabld';
+      line-height: 38px;
+      padding-top: 5px;
+      color: #404040;
+      a {
+        color: inherit;
+      }
+    }
+  }
